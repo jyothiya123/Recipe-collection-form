@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Recipe Collection</title>
+    <style>
+        /* Simple styles to hide inactive tabs and highlight the active one */
+        body{
+          background:rgb(220, 245, 238);
+         
+        }
+        
+
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        nav ul li a.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .recipe-image {
+            width: 90%;
+            max-width: 200px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Recipe Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="#appetizers" class="active" data-target="appetizers">Appetizers</a></li>
+                <li><a href="#main-courses" data-target="main-courses">Main Courses</a></li>
+                <li><a href="#desserts" data-target="desserts">Desserts</a></li>
+                <li><a href="#Starters" data-target="starters">Starters</a></li>
+                <li><a href="#beverages" data-target="beverages">Beverages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="tab-content">
+            <!-- Appetizers Section with Image -->
+            <section id="appetizers" class="tab active">
+                <h2>Appetizers</h2>
+                <div class="recipe-container">
+                  <div class="recipe-item">
+                      <img src="C:\Users\Manigopal\Downloads\cheese-hot.jpg" alt="Appetizer Image" class="recipe-image">
+                      <span class="recipe-name">Cheese Hot</span>
+                      <span class="price">$5.99</span>
+                  </div>
+                  <div class="recipe-item">
+                    <img src="C:\Users\Manigopal\Downloads\appetizers2.jpg" alt="Appetizer Image" class="recipe-image">
+                    <span class="recipe-name">Appetizer Platter</span>
+                    <span class="price">$4.49</span>
+                  </div>
+                  <div class="recipe-item">
+                    <img src="C:\Users\Manigopal\Downloads\appetizres1..jpg" alt="Appetizers Image" class="recipe-image">
+                    <span class="recipe-name">Appetizer Platter</span>
+                    <span class="price">$5.49</span>
+                  </div>
+                  
+
+                  <div class="recipe-item">
+                    <img src="C:\Users\Manigopal\Downloads\images.jpeg" alt="Appetizers Image" class="recipe-image">
+                    <span class="recipe-name">Appetizers</span>
+                    <span class="price">$3.49</span>
+                  </div>
+                  <div class="recipe-item">
+                    <img src=" C:\Users\Manigopal\Downloads\Prosciutto-Cheese-Puff-Pastry.jpg"alt="Appetizers Image" class="recipe-image">
+                    <span class="recipe-name">Appetizers</span>
+                    <span class="price">$6.49</span>
+                  </div>
+                  <div class="recipe-item">
+                    <img src=" C:\Users\Manigopal\Downloads\most delicious rolls.jpeg"alt="Appetizers Image" class="recipe-image">
+                    <span class="recipe-name">Appetizers</span>
+                    <span class="price">$8.49</span>
+                  </div>
+
+                  <div class="recipe-item"></div>
+                    <img src="C:\Users\Manigopal\Downloads\dannymeyers_caviar.webp"alt="Appetizers Image" class="recipe-image">
+                    <span class="recipe-name">Appetizers</span>
+                    <span class="price">$4.49</span>
+                  </div>
+                  
+                 
+
+                
+            </section>
+
+            <!-- Main Courses Section without Image -->
+            <section id="main-courses" class="tab">
+                <h2>Main Courses</h2>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\VegBiryani.webp" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">VegBiryani</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\Hyderabadi-chicken-Biryani.jpg" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">chicken-Biryani</span>
+                  <span class="price">$6.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\Butte.jpg" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">Butternaans</span>
+                  <span class="price">$10.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\fish-biryani.webp" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">fish-biryani</span>
+                  <span class="price">$6.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\andhra meals.jpg" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">andhra meals</span>
+                  <span class="price">$2.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\mandis.avif" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">mandis</span>
+                  <span class="price">$1.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\VegFriedRice.jpg" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">VegFriedRice</span>
+                  <span class="price">$1.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\Egg-Fried-Rice.jpg" alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">Egg-Fried-Rice</span>
+                  <span class="price">$2.49</span>
+                </div>
+                
+
+                
+            </section>
+
+            <!-- Desserts Section with Image -->
+             <section id="desserts" class="tab">
+                <h2>Desserts</h2>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\Black-Forest-Dessert-Cup-1000.webp" alt="Desserts Image" class="recipe-image">
+                  <span class="recipe-name">Forest-Dessert-Cup</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\chd4rs3g_dessert_625x300_07_April_20.webp" alt="Desserts Image" class="recipe-image">
+                  <span class="recipe-name">Dessert-Cup</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item">
+                  <img src="C:\Users\Manigopal\Downloads\Chocolate-sandwich-cupcakes-4b30ada.jpg" alt="Desserts Image" class="recipe-image">
+                  <span class="recipe-name">Chocolate-sandwich-cupcakes</span>
+                  <span class="price">$4.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\Black-Forest-Dessert-Cup-1000.webp" alt="Desserts Image" class="recipe-image">
+                  <span class="recipe-name">Black-Forest-Dessert-Cup</span>
+                  <span class="price">$3.49</span>
+                </div>        
+            </section>
+
+            <!--Snacks Section with Image -->
+            <section id="starters" class="tab">
+                <h2>Starters</h2>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\french fries.jpeg" alt="Starters Image" class="recipe-image">
+                  <span class="recipe-name">French fries</span>
+                  <span class="price">$2.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\pops.webp" class="recipe-image">
+                  <span class="recipe-name">Pops</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\Sticks.jpg" alt="Snacks Image" class="recipe-image">
+                  <span class="recipe-name">Sticks</span>
+                  <span class="price">$5.49</span>
+                </div>
+
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\Shrimp-Pakora.jpg" alt="Snacks Image" class="recipe-image">
+                  <span class="recipe-name">Shrimp-Pakora</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                  <img src="C:\Users\Manigopal\Downloads\manchurian.jpg"alt="main-couses Image" class="recipe-image">
+                  <span class="recipe-name">Manchurian</span>
+                  <span class="price">$4.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                  <img src="C:\Users\Manigopal\Downloads\tandoori-gobi-roasted-cauliflower-tikka-.jpg" class="recipe-image">
+                  <span class="recipe-name">Tandoori-gobi-roasted</span>
+                  <span class="price">$4.49</span>
+                </div>
+                
+                
+            </section> 
+
+            <!-- Beverages Section with Image -->
+            <section id="beverages" class="tab">
+                <h2>Beverages</h2>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\beverages.jpg" alt="Beverages Image" class="recipe-image">
+                  <span class="recipe-name">beverages</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\latte-americano.webp" alt="Beverages Image" class="recipe-image">
+                  <span class="recipe-name">Latte-Americano</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\unnamed.jpg" alt="Beverages Image" class="recipe-image">
+                  <span class="recipe-name">strawberry</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\cold-coffee.webp" alt="Beverages Image" class="recipe-image">
+                  <span class="recipe-name">Cold-Coffee</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\homemade.webp" alt="Beverages Image" class="recipe-image">
+                <span class="recipe-name">Mocktail</span>
+                  <span class="price">$5.49</span>
+                </div>
+                <div class="main-courses-item"></div>
+                <img src="C:\Users\Manigopal\Downloads\rose milk.avif" alt="Beverages Image" class="recipe-image">
+                <span class="recipe-name">Rose milk</span>
+                  <span class="price">$5.49</span>
+                </div>
+   
+            </section>
+        </div>
+
+        <section id="add-recipe">
+            <h2>Add a New Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+                <input type="text" id="recipe-type" placeholder="Type (Appetizer, Main Course, Dessert, Snack, Beverage)" required>
+                <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Recipe Collection</p>
+    </footer>
+
+    <script>
+        // Functionality for tab switching
+        const tabs = document.querySelectorAll('nav ul li a');
+        const sections = document.querySelectorAll('.tab');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+
+                // Add active class to the clicked tab
+                tab.classList.add('active');
+
+                // Hide all sections
+                sections.forEach(section => section.classList.remove('active'));
+
+                // Show the clicked section
+                const target = tab.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>.
